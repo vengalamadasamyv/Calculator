@@ -1,0 +1,89 @@
+/* universal selector */
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+/* body of html */
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+/* container */
+.container{
+    max-width: 400px;
+    padding:10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(89,109,0,0.9);
+    background-color:snow ;
+}
+/* card */
+.container input{
+    padding:2px;
+    height:3rem;
+    width: 23rem;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+    border-color: black;
+    text-align: right;
+    padding-right: 10px;
+}
+/* header of calc */
+.calhead{
+    text-align: center;
+    padding: 3px;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 3px;
+}
+/* buttons of calc */
+.card{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:10px;
+    margin-top: 9px;
+}
+/* number buttons */
+.card .but{
+    padding:0px;
+    background-color: wheat;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    border-color: wheat;
+}
+/* evaluation buttons */
+.card .but1{
+    padding:4px;
+    background-color: orangered;
+    color: aliceblue;
+    outline: none;
+    border-color: orangered;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* answer equal button */
+.card .ans{
+    padding: 4px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color:orangered;
+    color:aliceblue;
+    outline: none;
+    border-color: orangered;
+    font-size: 22px;
+    font-weight: 600;
+}
+/* media screen */
+@media screen and (min-width:300px) and (max-width:768px){
+    .container{
+        width:300px;
+    }
+    .container input{
+        width: 280px;
+    }
+}
